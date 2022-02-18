@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Vehicle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/vehicleView.css" type="text/css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="img/main/logo.png" class="main-logo"></a>
+		<nav>
+			<ul class="nav_link">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="hotel-search.html">Hotels</a></li>
+				<li><a href="vehicle_search.html">Vehicles</a></li>
+				<li><a href="restaurant_search.html">Restaurants</a></li>
+				<li><a href="tickets.html">Tickets</a></li>
+				<li><a href="articles.html">Articles</a></li>
+				<li><a href="login.html" class="login"><button class="btn-animation">Login</button></a></li>
+			</ul>
+		</nav>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</header>
+	<hr>
+	<div class="grid-container">
+		<div class="grid-images">
+			<img id="main-image" src="img/Vehicle/car.jpg">
+			
+			<img src="img/Vehicle/bus.jpg" class="sub-image">
+			<img src="img/Vehicle/car.jpg"  class="sub-image">
+			<img src="img/Vehicle/car1.jpg"  class="sub-image">
+			<img src="img/Vehicle/3wheel.jpg"  class="sub-image">
+		</div>
+		<div class="grid-details">
+			<h1>Rent a Car</h1>
+			<p>Location	: Anuradhapura <i class="fa fa-map-marker" style="color: red" aria-hidden="true"></i> </p>
+			<font color="orange" size="5em">4.5 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></font>
+			<p>Seats		: 5 &#128186;</p>
+			<p class="button price">Rs. 1200.00 / day</p>
+			<form action="#" name="bookValues">
+				<label for="destination">Destination : </label>
+				<select name="destination" required="">
+					<option value="">Select Destination</option>
+					<option value="Ampara">Ampara</option>
+					<option value="Anuradhapura">Anuradhapura</option>
+					<option value="Badulla">Badulla</option>
+					<option value="Batticaloa">Batticaloa</option>
+					<option value="Colombo">Colombo</option>
+					<option value="Galle">Galle</option>
+					<option value="Gampaha">Gampaha</option>
+					<option value="Hambantota">Hambantota</option>
+					<option value="Jaffna">Jaffna</option>
+					<option value="Kalutara">Kalutara</option>
+					<option value="Kandy">Kandy</option>
+					<option value="Kegalle">Kegalle</option>
+					<option value="Kilinochchi">Kilinochchi</option>
+					<option value="Kurunegala">Kurunegala</option>
+					<option value="Mannar">Mannar</option>
+					<option value="Matale">Matale</option>
+					<option value="Matara">Matara</option>
+					<option value="Moneragala">Moneragala</option>
+					<option value="Mullaitivu">Mullaitivu</option>
+					<option value="Nuwara Eliya">Nuwara Eliya</option>
+					<option value="Polonnaruwa">Polonnaruwa</option>
+					<option value="Puttalam">Puttalam</option>
+					<option value="Ratnapura">Ratnapura</option>
+					<option value="Trincomalee">Trincomalee</option>
+					<option value="Vavuniya">Vavuniya</option>
+				</select>
+				<div class="grid-form">
+
+					<label style="grid-area: a;" for="check-in">Check In Date : </label>
+					<input style="grid-area: c;" type="date" min="2022-02-14" max="2022-08-14" name="check-in" id="datein">
+					
+					<label style="grid-area: b;" for="check-out">Check Out Date : </label>
+					<input style="grid-area: d;" type="date" min="2022-02-14" max="2022-08-14" name="check-out" id="dateout">
+				</div>
+				<div class="buttons">
+					<input type="button" value="Check Availability" class="button">
+					<input type="submit" value="Add to Cart" class="button">
+				</div>
+			</form>
+		</div>
+		<div class="description">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi exercitationem provident deleniti distinctio, expedita dolores molestias aut quod? Quo vitae autem accusamus quis hic labore quaerat in quibusdam, molestiae iste temporibus, sapiente nam illo itaque eum fuga voluptatibus inventore, dolorem quas fugit? Ut id vel tempore dolorum? Molestiae neque incidunt perspiciatis inventore reprehenderit enim debitis quae modi architecto consectetur explicabo dolorem nemo nobis, cum eveniet at ipsam ab ea ut numquam distinctio sit atque. Eaque earum esse minima doloremque perspiciatis ratione a distinctio temporibus delectus, consequatur, deleniti enim vel accusantium perferendis debitis! Dolorem accusamus ipsa, alias sequi placeat id?</p>
+		</div>
+		<div class="grid-review">
+			<div class="review">1</div>
+			<div class="review">2</div>
+			<div class="review">3</div>
+			<div class="review">4</div>
+			<div class="review">5</div>
+			<div class="review">1</div>
+			<div class="review">2</div>
+			<div class="review">3</div>
+			<div class="review">4</div>
+			<div class="review">5</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="footer-left">
+			<h3 class="footer-headings">Links</h3>
+			<a href="home.html">Home</a>
+			<a href="home.html">Hotels</a>
+			<a>Vehicles</a>
+			<a href="home.html">Restaurants</a>
+			<a href="home.html">Tickets</a>
+			<a href="home.html">Sign-in / Sign-up</a>
+			<a href="app.html"><i class="fa fa-mobile" aria-hidden="true"></i> Get APP</a>
+			<a href="help.html"><i class="fa fa-question" aria-hidden="true"></i> Get Help</a>
+		</div>
+		<div class="footer-middle">
+			<h3 class="footer-headings">Contact Us</h3>
+			<ul>
+				<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-right">
+			<h3 class="footer-headings">About Us</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright &copy 2022 PLAN'n GO All rights reserved</p>
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/vehicleView.js"></script>
+</body>
+</html>

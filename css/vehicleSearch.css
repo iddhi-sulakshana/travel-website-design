@@ -1,0 +1,310 @@
+
+/*-------------------------*\
+  Advanced Search Section
+\*-------------------------*/
+
+.advanced-search{
+	margin: 5px;
+	padding: 10px;
+}
+	.advanced-search h3{
+	margin-bottom: 2px;
+	}
+	.form-content{
+		display: flex;
+		margin-top: 10px;
+	}
+		.wrapper{
+			border: 1px solid var(--lightblack);
+			flex-wrap: nowrap;
+			padding: 12px 24px 5px;
+			box-sizing: border-box;
+			height: 75px;
+			box-sizing: border-box;
+		}
+			.wrapper label{
+				display: block;
+				color: var(--midblack);
+				font-size: 14px;
+				line-height: 1.2;
+			}
+			.wrapper input, .wrapper2 .selector input{
+				margin-top: 5px;
+				width: 100%;
+				border: 0px;
+				line-height: 1.3;
+				font-weight: 800;
+				height: 20px;
+				font-size: 16px;
+				vertical-align: middle;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+		.wrapper0{
+			flex-grow: 2;
+		}
+		.wrapper1{
+			flex-grow: 2;
+		}
+		.wrapper2{
+			flex-shrink: 1;
+			z-index: 50;
+		}
+			.wrapper2 #selector input{
+				padding: 5px;
+				width: 125px;
+				cursor: pointer;
+			}
+			.wrapper2 #selector{
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+			}
+			.wrapper2 .selection{
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				margin-top: 5px;
+				cursor: pointer;
+				border: 1px solid var(--black65);
+				background-color: white;
+				opacity: 0;
+				overflow: auto;
+				height: auto;
+				max-height: 200px;
+				transition: all .15s ease-in;
+			}
+			.wrapper2 #selector:focus-within + .selection{
+				opacity: 1;
+			}
+				.wrapper2 .selection .select-item{
+					border-bottom: 1px solid var(--black20);
+					padding: 10px;
+					margin: 0px;
+					font-size: 16px;
+				}
+				.wrapper2 .selection .select-item.active{
+					background-color: var(--midblue);
+					color: white;
+				}
+				.wrapper2 .selection .select-item:hover{
+					background-color: var(--midblue);
+					color: white;
+				}
+			.wrapper2 .selection::-webkit-scrollbar{
+				display: none;
+			}
+		.wrapper3{
+			padding: 0px;
+			text-align: center;
+			width: 75px;
+			min-width: 75px;
+			flex-shrink: 1;
+			border: 0px;
+		}
+			.wrapper3 .icon, .wrapper3 .text{
+				width: 100%;
+				height: 100%;
+				background-color: var(--midblue);
+				color: white;
+				border: 0px;
+				font-size: 32px;
+			}
+			.wrapper3 .text{
+				display: none;
+			}
+			
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-gap: 1em;
+}
+/*-------------------------*\
+	Search Filter Section
+\*-------------------------*/
+#filter-toggle{
+	grid-column: 1/-1;
+	padding: 10px;
+	display: none;
+}
+.search-filter{
+	padding: 10px;
+	border: 1px solid var(--lightblack);
+	grid-column: 1/2;
+}
+	.search-filter label{
+		color: var(--midblack);
+		display: block;
+		margin: 2px 0px;
+	}
+	.search-filter .filter-common{
+		margin-left: 15px;
+	}
+		.search-filter .filter-common div{
+			display: block;
+			margin-top: 5px;
+		}
+			.search-filter .filter-common div input{
+				cursor: pointer;
+				margin-right: 5px;
+			}
+			.search-filter .rating div span{
+				color: var(--black30);
+			}
+			.search-filter .rating div .checked ~ span{
+				color: orange;
+			}
+			.search-filter .rating div:hover > span{
+				color: orange;
+		 	}
+.search-filter button{
+	width: 100%;
+	height: 25px;
+}
+/*-------------------------*\
+  Main Content Sction
+\*-------------------------*/
+.main-content{
+	grid-column: 2/-1;
+	display: flex;
+	flex-direction: column;
+}
+/* top view by buttons */
+.view-by{
+	margin: 5px 0px;
+}
+.view-by button{
+	padding: 0.4em;
+	cursor: pointer;
+}
+.view-by .active{
+	border: 0;
+	color: white;
+	cursor: default;
+	background-color: var(--lightblue);
+	box-shadow: inset -1px -1px 3px rgba(0,0,0,0.5), 2px 2px 3px rgba(0,0,0,0.2);
+}
+/*searched content grid view*/
+.searched-content{
+	display: grid;
+	grid-gap: 1em;
+	margin-bottom: 10px;
+}
+.searched-content.grid-view{
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.searched-content.list-view{
+	grid-template-rows: repeat(1, 1fr);
+}
+.searched-content .searched-item{
+	width: auto;
+	padding: 10px 5px;
+	border: 1px solid var(--black30);
+	border-radius: 5px;
+}
+.searched-content.grid-view .searched-item{
+	text-align: center;
+}
+.searched-content.list-view .searched-item{
+	text-align: left;
+}
+	.searched-content .searched-item a{
+		text-decoration: none;
+	}
+	.searched-content .searched-item:hover{
+		box-shadow: 1.5px 1.5px 5px grey;
+	}
+	.searched-content .searched-item a img{
+		height: auto;
+		padding: 20px;
+	}
+	.searched-content.grid-view .searched-item a img{
+		width: 100%;
+	}
+	.searched-content.list-view .searched-item a img{
+		float: left;
+		height:100%;
+		width: 30%;
+	}
+	.searched-content .searched-item a h3{
+		font-family: 'Mada', sans-serif;
+		margin-top: auto;
+		color: var(--midblue);
+	}
+	.searched-content .searched-item a p{
+		text-align: justify;
+		color: var(--ash);
+	}
+	.searched-content .searched-item a h1, h2, div .details{
+		color: var(--darkblue);
+		display: inline;
+	}
+	.searched-content .searched-item a div{
+		margin-top: 3px;
+	}
+	.searched-content .searched-item a div .details{
+		font-size: 18px;
+	}
+	.searched-content .searched-item a div .details i[class="fa fa-map-marker"]{
+		color: red;
+	}
+	.searched-content .searched-item a div .details i[class="fa fa-star checked"]{
+		color: orange;
+	}
+
+/*Bottom page navigation*/
+.page-nav{
+	text-align: center;
+	margin-bottom: 10px;
+}
+	.page-nav button{
+		height: 40px;
+		width: 40px;
+	}
+	.page-nav .active{
+		color: white;
+		cursor: default;
+		background-color: var(--lightblue);
+		box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2), 2px 2px 3px rgba(0,0,0,0.2);
+	}
+
+
+
+/*-------------------------*\
+  Device Max width is 760 or lower
+\*-------------------------*/
+@media screen and (max-width: 760px) {
+	.form-content{
+		flex-direction: column;
+	}
+	.wrapper3{
+		width: 100%;
+	}
+	.wrapper3 .text{
+		display: initial;
+	}
+	.wrapper3 .icon{
+		display: none;
+	}
+	.wrapper2 #selector{
+		width: 100%;
+	}
+	.wrapper2 #selector input{
+		width: 100%;
+	}
+
+	.grid-container{
+		grid-template-columns: 1fr;
+	}
+	.main-content{
+		grid-column: 1/-1;
+	}
+	#filter-toggle{
+		display: inline-block;
+	}
+	.filter-container{
+		display: none;
+		grid-column: 1/-1;
+		margin-bottom: 5px;
+	}
+}
