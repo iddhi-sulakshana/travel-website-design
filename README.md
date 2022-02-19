@@ -1,6 +1,6 @@
 # Travel-Website for the project
 ## Team Members :
-  - Chamodh (Leader)
+  - Chamodh (**_Leader_**)
   - Iddhi
   - Chanaka
   - Harshana
