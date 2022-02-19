@@ -23,3 +23,7 @@
   - About Page                : Saluka
   - Notices Page              : Saluka
   - Guide Page                : Chanaka
+
+- [ ] Merge Home Page
+- [ ] Merge Hotel Search Page
+- [x] Merge Vehicle Search Page
