@@ -1,4 +1,5 @@
 # Travel-Website for the project
+
 ## Team Members :
   - Chamodh (**_Leader_**)
   - Iddhi
@@ -9,6 +10,7 @@
   - Saluka
 
 ## Work Breakdown :
+
   - Home Page                 : Chanaka
   - Hotel Search Page         : Yasas
   - Vehicle Search Page       : Iddhi
@@ -24,6 +26,19 @@
   - Notices Page              : Saluka
   - Guide Page                : Chanaka
 
+## Task List
+
 - [ ] Merge Home Page
 - [ ] Merge Hotel Search Page
-- [x] Merge Vehicle Search Page
+- [x] #9f007a2490cd345bb87f00456485bd4645e77a1f Merge Vehicle Search Page
+- [ ] Restaurant Search Page
+- [ ] Hotel View Page
+- [x] Vehicle View Page
+- [ ] Restaurants View Page
+- [ ] Attraction Page
+- [ ] Attraction View Page
+- [ ] Packages Page
+- [ ] Sign in & Sign up Page
+- [ ] About Page
+- [ ] Notices Page
+- [ ] Gudie Page
