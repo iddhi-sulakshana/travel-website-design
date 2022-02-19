@@ -32,7 +32,6 @@
 }
 .grid-details{
 	margin-top: 10px;
-	grid-column: 3/-1;
 	background-color: var(--extralightblue);
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -179,6 +178,12 @@
 	height: 20%;
 	width: 100%;
 }
+.rate-wrapper p:first-child{
+	grid-column: 1/2;
+}
+.rate-wrapper p:last-child{
+	grid-column: 3/4;
+}
 /*rating bar*/
 .rating {
   background: var(--black20);
@@ -196,9 +201,6 @@
   height: 100%;
   width: 0; 
 } 
-
-
-
 
 .grid-review{
 	grid-column: 2/-1;
@@ -249,4 +251,16 @@
 	color: orange;
 	margin-top: 0.3em;
 	padding: 0;
+}
+
+@media screen and (max-width: 760px){
+	.grid-container>div{
+		grid-column: 1/-1;
+	}
+	.seperate-rating > .rate-wrapper{
+		margin-top: 1em;
+	}
+	.grid-review{
+		grid-template-columns: repeat(5, minmax(50vw, 1fr));
+	}
 }
