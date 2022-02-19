@@ -9,7 +9,7 @@
   - Saluka
 
 ## Work Breakdown :
-  - Home Page\t\t: Chanaka
+  - Home Page                 : Chanaka
   - Hotel Search Page         : Yasas
   - Vehicle Search Page       : Iddhi
   - Restaurants Search Page   : Harshana
