@@ -30,7 +30,7 @@
 
 - [ ] Merge Home Page
 - [ ] Merge Hotel Search Page
-- [x] #9f007a2490cd345bb87f00456485bd4645e77a1f Merge Vehicle Search Page
+- [x] \#9f007a2490cd345bb87f00456485bd4645e77a1f Merge Vehicle Search Page
 - [ ] Restaurant Search Page
 - [ ] Hotel View Page
 - [x] Vehicle View Page
