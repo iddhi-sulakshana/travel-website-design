@@ -16,13 +16,14 @@
 	box-sizing: border-box;
 }
 
-body::-webkit-scrollbar{
+*::-webkit-scrollbar{
 	width: 0.5em;
 }
-body::-webkit-scrollbar-track{
+*::-webkit-scrollbar-track{
 	background: var(--extralightblue);
+	border-radius: 2em;
 }
-body::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb{
 	background: var(--darkblue);
 	border-radius: 2em;
 }
