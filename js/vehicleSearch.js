@@ -23,6 +23,16 @@ const toggleFilter = () =>{
 	});
 }
 toggleFilter();
+// animte searched item function
+
+function animateSrchItem(){
+	let items = document.querySelectorAll(".searched-item");
+	items.forEach((link, index)=>{
+		link.style.animation =``;
+		link.offsetWidth;
+		link.style.animation = link.style.animation = `FadeUp 0.25s ease forwards ${index / 5 + .01}s`;;
+	});
+}
 
 //change the active statement of the navigation button when
 //click on it and remove it from the other active class
@@ -33,6 +43,7 @@ for(let i=0; i<btns.length; i++){
 		let current = btn_nav.getElementsByClassName("pge-btn active");
 		current[0].classList.remove('active');
 		btns[i].classList.add('active');
+		animateSrchItem()
 	});
 }
 
@@ -54,15 +65,20 @@ for(let i=0; i<selectitems.length; i++){
 //then check already is it in the grid view if it is then change 
 //the class name to the list view same goes to the grid view
 //button clicked
-function changeListGrid(thisID){
-	let container = document.getElementById("listingContent");
+animateSrchItem()
+
+var container = document.getElementById("listingContent");
+var otherBtn = document.getElementById('grid-view');
+function changeListGrid(thisID){	
 	if(thisID.id == 'list-view'){
 		if(container.className == 'searched-content grid-view'){
 			container.classList.remove('grid-view');
 			container.classList.add('list-view');
 			thisID.classList.add('active');
-			let otherBtn = document.getElementById('grid-view');
 			otherBtn.classList.remove('active');
+			otherBtn.disabled = false;
+			thisID.id.disabled = true;
+			animateSrchItem()
 		}
 	}
 	else if(thisID.id == 'grid-view'){
@@ -72,6 +88,9 @@ function changeListGrid(thisID){
 			thisID.classList.add('active');
 			let otherBtn = document.getElementById('list-view');
 			otherBtn.classList.remove('active');
+			otherBtn.disabled = false;
+			thisID.disabled = true;
+			animateSrchItem()
 		}
 	}
 }
@@ -85,3 +104,5 @@ function changeCheck(elementName){
 		elementName.classList.remove('checked');
 	}
 }
+
+

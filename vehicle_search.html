@@ -6,6 +6,7 @@
 	<link rel="stylesheet" hreflang="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/vehicleSearch.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="/img/main/favicon.ico">
 </head>
 <body>
 	<header>
@@ -14,10 +15,11 @@
 			<ul class="nav_link">
 				<li><a href="home.html">Home</a></li>
 				<li><a href="hotel-search.html">Hotels</a></li>
-				<li><a href="#" class="active">Vehicles</a></li>
+				<li><a>Vehicles</a></li>
 				<li><a href="restaurant_search.html">Restaurants</a></li>
-				<li><a href="tickets.html">Tickets</a></li>
-				<li><a href="articles.html">Articles</a></li>
+				<li><a href="packages.html">Packages</a></li>
+				<li><a href="notices.html">Notices</a></li>
+				<li><a href="attraction.html">Attraction</a></li>
 				<li><a href="login.html" class="login"><button class="btn-animation">Login</button></a></li>
 			</ul>
 		</nav>
@@ -28,9 +30,9 @@
 		</div>
 	</header>
 	<hr>
-	<div class="advanced-search">
+	<section class="advanced-search">
 		<h3>Rent Vehicle</h3>
-		<form name="advanced-search-form" method="POST" action="vehicle_search.html">
+		<form name="advanced-search-form" method="GET" action="vehicle_search.html">
 			<div class="form-content">
 				<div class="wrapper wrapper0">
 					<label>Pick-up Location</label>
@@ -53,17 +55,17 @@
 					</div>
 				</div>
 				<div class="wrapper wrapper3">
-					<button type="submit" value="submit" class="btn-animation icon"><i class="fa fa-search" aria-hidden="true"></i></button>
-					<button type="submit" value="submit" class="btn-animation text">Search</button>
+					<button type="Submit" value="submit" class="btn-animation icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button type="Submit" value="submit" class="btn-animation text">Search</button>
 				</div>
 			</div>
 		</form>
-	</div>
-	<div class="grid-container">
+	</section>
+	<section class="grid-container">
 			<button class="btn-animation" id="filter-toggle">Filters</button>
 			<div class="filter-container">
 				<div class="search-filter">
-					<form name="search-filter-form" action="vehicle_search.html" method="POST">
+					<form name="search-filter-form" action="vehicle_search.html" method="GET">
 						<label for="vehicle-seats">Seats</label>
 						<div class="filter-common">
 							<div>
@@ -85,25 +87,21 @@
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="5"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
 							</div>
-
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="4"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
 							</div>
-
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="3"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
 							</div>
-
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="2"><span class="fa fa-star"></span><span class="fa fa-star"></span>
 							</div>
-
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="1"><span class="fa fa-star"></span>
 							</div>
 						</div>
 						<hr>
-						<div class="price">
+						<div class="filter-common price">
 							<label for="min-price">Min Price(Rs.)</label>
 							<input name="min-price" type="text" placeholder="Min Price">
 							<label for="max-price">Max Price(Rs.)</label>
@@ -211,20 +209,22 @@
 					<button class="btn-animation pge-btn">5</button>
 				</div>
 			</div>
-	</div>
+	</section>
 	
 
-	<div class="footer">
+	<footer>
 		<div class="footer-left">
 			<h3 class="footer-headings">Links</h3>
 			<a href="home.html">Home</a>
 			<a href="home.html">Hotels</a>
 			<a>Vehicles</a>
-			<a href="home.html">Restaurants</a>
-			<a href="home.html">Tickets</a>
-			<a href="home.html">Sign-in / Sign-up</a>
-			<a href="app.html"><i class="fa fa-mobile" aria-hidden="true"></i> Get APP</a>
-			<a href="help.html"><i class="fa fa-question" aria-hidden="true"></i> Get Help</a>
+			<a href="restaurant.html">Restaurants</a>
+			<a href="packages.html">Packages</a>
+			<a href="notice.html">Notices</a>
+			<a href="packages.html">Packages</a>
+			<a href="attraction.html">Attraction</a>
+			<a href="guides.html">Guides</a>
+			<a href="home.html"><strong>Sign-in / Sign-up</strong></a>
 		</div>
 		<div class="footer-middle">
 			<h3 class="footer-headings">Contact Us</h3>
@@ -237,9 +237,9 @@
 		</div>
 		<div class="footer-right">
 			<h3 class="footer-headings">About Us</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>PLAN’n GO, Sri Lanka’s first all in one experience traveling website. From booking transportation to reserving your favorite restaurants and hotels in Sri Lanka. Travelers across Sri Lanka can use PLAN’n GO site to discover where to stay, what to do, where to eat and how to get there. PLAN’n GO also allows for travelers to review their stays and share their traveling experience. PLAN’n GO makes planning easy no matter the trip type.</p>
 		</div>
-	</div>
+	</footer>
 	<div class="copyright">
 		<p>Copyright &copy 2022 PLAN'n GO All rights reserved</p>
 	</div>

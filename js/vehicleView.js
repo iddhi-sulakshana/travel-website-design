@@ -7,7 +7,11 @@ const changeImage = () => {
 	const list = container.querySelectorAll('.sub-image');
 	for(let i=0; i<list.length; i++){
 		list[i].addEventListener('click', () => {
+			//animations
+			main_image.classList.remove("scale");
+			void main_image.offsetWidth;
 			main_image.src = list[i].src;
+			main_image.classList.add("scale");
 		});
 	}
 }

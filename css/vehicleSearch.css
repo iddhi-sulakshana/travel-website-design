@@ -148,6 +148,12 @@
 				cursor: pointer;
 				margin-right: 5px;
 			}
+			.search-filter .price > input{
+				padding: 0.5em;
+				border-radius: 5px;
+				border: 0.2px solid var(--black30);
+				width: 100%;
+			}
 			.search-filter .rating div span{
 				color: var(--black30);
 			}
@@ -255,7 +261,7 @@
 /*Bottom page navigation*/
 .page-nav{
 	text-align: center;
-	margin-bottom: 10px;
+	margin: 1em 0;
 }
 	.page-nav button{
 		height: 40px;
@@ -308,3 +314,8 @@
 		margin-bottom: 5px;
 	}
 }
+
+/* animations */
+body .advanced-search{animation-delay: 0.25s;}
+body .grid-container{animation-delay: 0.35s;}
+.searched-item{opacity: 0;}

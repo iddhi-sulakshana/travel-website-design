@@ -28,6 +28,7 @@
 	border-radius: 2em;
 }
 body{
+	overflow-x: hidden;
 	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
@@ -73,6 +74,7 @@ header{
 	height: 50px;
 }
 .nav_link{
+	margin-left: auto;
 	list-style: none;
 	flex-grow: 3;
 }
@@ -108,12 +110,12 @@ header{
 	background-color: var(--darkblue);
 	margin: 2px;
 	border-radius: 5px;
-	transition: 5s;
+	transition: 1s;
 }
 /*-------------------------*\
    footer section
 \*-------------------------*/
-.footer{
+footer{
 	border-top: 1px solid var(--black30);
 	border-bottom: 1px solid var(--black30);
 	padding: 10px;
@@ -121,7 +123,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
-	.footer h3{
+	footer h3{
 		color: var(--darkblue);
 	}
 	.footer-left{
@@ -202,6 +204,7 @@ header{
 \*-------------------------*/
 @media screen and (max-width: 760px) {
 	body{
+		width: 95%;
 		overflow-x: hidden;
 	}
 	header{
@@ -238,26 +241,59 @@ header{
 	}
 
 
-	.footer{
+	footer{
 		flex-direction: column;
 		text-align: center;
-	}
-	.footer>div{
 		width: 100%;
 	}
-	.footer>div>h3{
+	.footer-left,
+	.footer-middle,
+	.footer-right{
+		width: 100%;
+	}
+	footer>div>h3{
 		background-color: var(--extralightblue)
 	}
 }
 /*top navigation keyframes*/
 
-@keyframes navLinkFade{
+@keyframes FadeLeft{
 	from{
 		opacity: 0;
-		transform: translateX(50px);
+		transform: translateX(100vw);
 	}
 	to{
 		opacity: 1;
 		transform: translateX(0);
 	}
 }
+@keyframes FadeUp{
+	from{
+		opacity: 0;
+		transform: translateY(100vh);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+section,
+footer,
+.copyright,
+.nav_link li{opacity: 0;}
+.nav_link li,.burger,
+header > a{animation: FadeLeft 0.25s ease forwards;}
+footer,
+.copyright,
+section{animation: FadeUp 0.25s ease forwards;}
+.nav_link li:nth-child(1){animation-delay: .075s;}
+.nav_link li:nth-child(2){animation-delay: .15s;}
+.nav_link li:nth-child(3){animation-delay: .225s;}
+.nav_link li:nth-child(4){animation-delay: .3s;}
+.nav_link li:nth-child(5){animation-delay: .375s;}
+.nav_link li:nth-child(6){animation-delay: .45s;}
+.nav_link li:nth-child(7){animation-delay: .525s;}
+.burger{animation-delay: 0.15s;}
+section{animation-delay: .25s;}
+footer{animation-delay: .35s;}
+.copyright{animation-delay: .45s;}
