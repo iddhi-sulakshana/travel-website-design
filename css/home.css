@@ -253,7 +253,7 @@ img{
  transition: var(--trans);
  opacity: 0;
 }
-.featured-item-content:hover .text{
+.featured-item:hover .text{
   opacity: 1;
 }
 /*transform word to mouse pointer*/
