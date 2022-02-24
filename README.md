@@ -27,18 +27,31 @@
   - Guide Page                : Chanaka
 
 ## Task List
+- **_Design_**
+  - [ ] Home Page
+  - [ ] Hotel Search Page
+  - [x] Vehicle Search Page
+  - [ ] Restaurant Search Page
+  - [ ] Hotel View Page
+  - [x] Vehicle View Page
+  - [ ] Restaurants View Page
+  - [ ] Attraction Page
+  - [ ] Attraction View Page
+  - [ ] Packages Page
+  - [ ] Sign in & Sign up Page
+  - [ ] About Page
+  - [ ] Notices Page
+  - [ ] Gudie Page
 
-- [ ] Merge Home Page
-- [ ] Merge Hotel Search Page
-- [x] Merge Vehicle Search Page
-- [ ] Restaurant Search Page
-- [ ] Hotel View Page
-- [x] Vehicle View Page
-- [ ] Restaurants View Page
-- [ ] Attraction Page
-- [ ] Attraction View Page
-- [ ] Packages Page
-- [ ] Sign in & Sign up Page
-- [ ] About Page
-- [ ] Notices Page
-- [ ] Gudie Page
+- **_Database_**
+  - [ ] Hotel Search Page
+  - [ ] Vehicle Search Page
+  - [ ] Restaurant Search Page
+  - [ ] Hotel View Page
+  - [ ] Vehicle View Page
+  - [ ] Restaurants View Page
+  - [ ] Attraction Page
+  - [ ] Attraction View Page
+  - [ ] Packages Page
+  - [ ] Sign in & Sign up Page
+
