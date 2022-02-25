@@ -44,15 +44,13 @@
 				</div>
 				<div class="wrapper wrapper2">
 					<label>Vehicle Type</label>
-					<div id="selector">
-						<input type="text" id="vehicle-type" name="vehicle-type" value="Car" readonly="">
-					</div>
-					<div id="selection" class="selection">
-						<div class="select-item active">Car</div>
-						<div class="select-item">Van</div>
-						<div class="select-item">Bicycle</div>
-						<div class="select-item">3-Wheel</div>
-					</div>
+					<select name="vehicleType" class="inputType" required="">
+						<option value="">Vehicle Type</option>
+						<option value="Car">Car</option>
+						<option value="Van">Van</option>
+						<option value="Bus">Bus</option>
+						<option value="3-Wheel">3-Wheel</option>
+					</select>
 				</div>
 				<div class="wrapper wrapper3">
 					<button type="Submit" value="submit" class="btn-animation icon"><i class="fa fa-search" aria-hidden="true"></i></button>

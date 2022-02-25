@@ -47,19 +47,7 @@ for(let i=0; i<btns.length; i++){
 	});
 }
 
-//hide the selector for the advanced search bar
-//vehicle type input
-var selector = document.getElementById('selection');
-var selectitems = selector.getElementsByClassName('select-item')
-var input = document.getElementById("vehicle-type");
-for(let i=0; i<selectitems.length; i++){
-	selectitems[i].addEventListener("click", () =>{
-		let current = selector.getElementsByClassName("select-item active");
-		current[0].classList.remove('active');
-		selectitems[i].classList.add('active');
-		input.value = selectitems[i].innerHTML;
-	});
-}
+
 
 //changes the grid view and list view if list view button clicked
 //then check already is it in the grid view if it is then change 

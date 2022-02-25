@@ -28,7 +28,7 @@
 				font-size: 14px;
 				line-height: 1.2;
 			}
-			.wrapper input, .wrapper2 .selector input{
+			.wrapper input{
 				margin-top: 5px;
 				width: 100%;
 				border: 0px;
@@ -47,51 +47,25 @@
 			flex-grow: 2;
 		}
 		.wrapper2{
-			flex-shrink: 1;
-			z-index: 50;
+			flex-grow: 1;
 		}
-			.wrapper2 #selector input{
+			.wrapper2 .inputType{
 				padding: 5px;
-				width: 125px;
 				cursor: pointer;
-			}
-			.wrapper2 #selector{
-				position: relative;
-				display: inline-block;
-				cursor: pointer;
-			}
-			.wrapper2 .selection{
-				border-bottom-left-radius: 5px;
-				border-bottom-right-radius: 5px;
-				margin-top: 5px;
-				cursor: pointer;
-				border: 1px solid var(--black65);
-				background-color: white;
-				opacity: 0;
-				overflow: auto;
+				width: 100%;
+				border: 0px;
+				font-weight: 800;
 				height: auto;
-				max-height: 200px;
-				transition: all .15s ease-in;
+				font-size: 16px;
+				vertical-align: middle;
+				text-overflow: ellipsis;
 			}
-			.wrapper2 #selector:focus-within + .selection{
-				opacity: 1;
+			.inputType option{
+				font-weight: 600;
 			}
-				.wrapper2 .selection .select-item{
-					border-bottom: 1px solid var(--black20);
-					padding: 10px;
-					margin: 0px;
-					font-size: 16px;
-				}
-				.wrapper2 .selection .select-item.active{
-					background-color: var(--midblue);
-					color: white;
-				}
-				.wrapper2 .selection .select-item:hover{
-					background-color: var(--midblue);
-					color: white;
-				}
-			.wrapper2 .selection::-webkit-scrollbar{
-				display: none;
+			.inputType option:checked{
+				background-color: var(--darkblue);
+				color: white;
 			}
 		.wrapper3{
 			padding: 0px;
@@ -292,10 +266,7 @@
 	.wrapper3 .icon{
 		display: none;
 	}
-	.wrapper2 #selector{
-		width: 100%;
-	}
-	.wrapper2 #selector input{
+	.wrapper2{
 		width: 100%;
 	}
 
