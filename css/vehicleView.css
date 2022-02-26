@@ -75,7 +75,6 @@
     right 0.5em
     center
     no-repeat;
-  
   cursor:pointer;
 }
 .grid-form input[type="date"]:focus {
@@ -94,10 +93,8 @@
   top:0;
   right:0;
   bottom:0;
-  
   opacity:0;
   cursor:pointer;
-  
   color:rgba(0, 120, 250, 1);
   background:rgba(0, 120, 250, 1);
  

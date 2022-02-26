@@ -6,14 +6,14 @@
 	<link rel="stylesheet" hreflang="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/vehicleSearch.css" type="text/css">
-	<link rel="icon" type="image/x-icon" href="/img/main/favicon.png">
+	<link rel="icon" type="image/x-icon" href="img/main/favicon.png">
 </head>
 <body>
 	<header>
 		<a href="index.html"><img src="img/main/logo.png" class="main-logo"></a>
 		<nav>
 			<ul class="nav_link">
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="hotel-search.html">Hotels</a></li>
 				<li><a>Vehicles</a></li>
 				<li><a href="restaurant_search.html">Restaurants</a></li>
@@ -35,12 +35,12 @@
 		<form name="advanced-search-form" method="GET" action="vehicle_search.html">
 			<div class="form-content">
 				<div class="wrapper wrapper0">
-					<label>Pick-up Location</label>
-					<input type="text" name="pick-up-location" placeholder="City, Airport, Hotel, Restaurants, etc." required="">
+					<label for="check-in">Check-in Date</label>
+					<input type="date" name="check-in" placeholder="Check in date" required=""  min="2022-02-14" id="datein">
 				</div>
 				<div class="wrapper wrapper1">
-					<label>Drop-off Location</label>
-					<input type="text" name="drop-off-location" placeholder="Airport, Hotel, etc." required="">
+					<label for="check-out">Check-out Date</label>
+					<input type="date" name="check-out" placeholder="Check in date" required="" min="2022-02-14" id="dateout">
 				</div>
 				<div class="wrapper wrapper2">
 					<label>Vehicle Type</label>
@@ -97,6 +97,11 @@
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="1"><span class="fa fa-star"></span>
 							</div>
+						</div>
+						<hr>
+						<div class="filter-common price">
+							<label for="district">District</label>
+							<input name="district" type="text" placeholder="Enter district">
 						</div>
 						<hr>
 						<div class="filter-common price">
@@ -213,13 +218,12 @@
 	<footer>
 		<div class="footer-left">
 			<h3 class="footer-headings">Links</h3>
-			<a href="home.html">Home</a>
-			<a href="home.html">Hotels</a>
+			<a href="index.html">Home</a>
+			<a href="hotel.html">Hotels</a>
 			<a>Vehicles</a>
 			<a href="restaurant.html">Restaurants</a>
 			<a href="packages.html">Packages</a>
 			<a href="notice.html">Notices</a>
-			<a href="packages.html">Packages</a>
 			<a href="attraction.html">Attraction</a>
 			<a href="guides.html">Guides</a>
 			<a href="home.html"><strong>Sign-in / Sign-up</strong></a>

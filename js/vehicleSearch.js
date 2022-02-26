@@ -93,4 +93,32 @@ function changeCheck(elementName){
 	}
 }
 
+//This get the current date assign it to the checkin date
+//when chekin data changed check if checkin value is none
+//then disable checkout else check if checkout vale is less
+//than checkin value set checkout value to the checkin value
+//and after if set checkout min to checkin value to disable
+//users to select date behind the check out and undisable checkout
+const changeDate = () => {
+	//date format yyyy-mm-dd
+	const date = new Date();
+	const today = date.getFullYear() + "-" + (date.getMonth()+1)  + "-" + date.getDate()+1;
+	const checkin = document.getElementById('datein');
+	const checkout = document.getElementById('dateout');
+	checkin.valueAsDate = new Date();
+	checkin.min = checkout.min = checkin.value;
+	checkin.addEventListener('change', () => {
+		if(checkin.value == ""){
+			checkout.disabled = true;
+		}else{
+			if(checkout.value < checkin.value){
+				checkout.value = checkin.value; 
+			}
+			checkout.min = checkin.value; 
+			checkout.disabled = false;
+		}
+	});
+}
+changeDate();
+
 
