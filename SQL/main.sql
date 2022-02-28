@@ -209,6 +209,7 @@ CREATE TABLE table_userOrder(
 CREATE TABLE table_attraction(
   attractionId INT UNSIGNED AUTO_INCREMENT,
   attractionTitle VARCHAR(40) NOT NULL,
+  attractionImageHome VARCHAR(40) NOT NULL,
   attractionImagePri VARCHAR(40) NOT NULL,
   attractionDescription TEXT NOT NULL,
   attractionLocationLink TEXT NOT NULL,

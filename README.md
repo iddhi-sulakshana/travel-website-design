@@ -28,20 +28,19 @@
 
 ## Task List
 - **_Design_**
-  - [ ] Home Page
+  - [x] Home Page
   - [ ] Hotel Search Page
   - [x] Vehicle Search Page
   - [ ] Restaurant Search Page
   - [ ] Hotel View Page
   - [x] Vehicle View Page
   - [ ] Restaurants View Page
-  - [ ] Attraction Page
-  - [ ] Attraction View Page
+  - [x] Attraction Page
+  - [x] Attraction View Page
   - [ ] Packages Page
   - [ ] Sign in & Sign up Page
   - [ ] About Page
-  - [ ] Notices Page
-  - [ ] Gudie Page
+  - [x] Notices Page
 
 - **_Database_**
   - [ ] Hotel Search Page

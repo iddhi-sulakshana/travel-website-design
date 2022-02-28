@@ -44,62 +44,9 @@
 	font-size: 1.1em;
 	line-height: 1.7;
 }
-.grid-details select[name="destination"]{
-	width: 100%;
-  padding:1em 3.5em 1em 0.75em;
-  border:1px solid #8292a2;
-  border-radius:0.25em;
-	margin-bottom: 10px;
-}
-.grid-details select[name="destination"] > option{
-  font-size: 1.1em;
-}
-.grid-form{
-	display: grid;
-	column-gap: 1%;
-	grid-template-areas: 
-		'a b'
-		'c d';
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-}
-.grid-form input[type="date"] {
-	margin-top: -10px;
-  position:relative;
-  padding:1em 3.5em 1em 0.75em;
-  border:1px solid #8292a2;
-  border-radius:0.25em;
-  background:
-    white
-    url("https://img.icons8.com/windows/32/000000/calendar-week.png")
-    right 0.5em
-    center
-    no-repeat;
-  cursor:pointer;
-}
-.grid-form input[type="date"]:focus {
-  outline:none;
-  border-color:darkblue;
-  box-shadow:0 0 0 0.25em rgba(0, 120, 250, 0.1);
-}
-.grid-form input[type="date"]::-webkit-clear-button,
-.grid-form input[type="date"]::-webkit-inner-spin-button {
-  display:none;
-}
-.grid-form input[type="date"]::-webkit-calendar-picker-indicator {
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  right:0;
-  bottom:0;
-  opacity:0;
-  cursor:pointer;
-  color:rgba(0, 120, 250, 1);
-  background:rgba(0, 120, 250, 1);
- 
-}
 .grid-details .price{
+	margin-top: 1vw;
+	margin-bottom: 5vw;
 	box-shadow: inset -2px -2px 2px rgba(0,0,0,0.4), inset 2px 2px 2px rgba(0,0,0,0.4)
 }
 .grid-details .price:hover{
@@ -114,17 +61,26 @@
 	text-align: center;
 }
 .grid-details *[class="button"]:hover{
+	cursor: pointer;
 	background-color: var(--darkblue);
 	box-shadow: inset -3px -3px 5px rgba(0,0,0,0.4), 3px 3px 3px rgba(0,0,0,0.4);
 }
-.grid-details input[class="button"]{
+.grid-details button[class="button"]{
 	margin: 10px 0 5px 0;
 	width: 100%;
 	font-size: 1.1em;
-	line-height: 1.7;
+	line-height: 1.5;
 	border: 0;
 }
-
+.grid-details button[class="button"] > i{
+	font-size: 1.5em;
+	letter-spacing: 0.5em;
+}
+.grid-details *[class="button"]:hover > i{
+	color: var(--extralightblue);
+	transform: scale(1.2);
+	transition: transform .15s ease-in-out;
+}
 .description{
 	grid-column: 1/-1;
 	font-family: 'Roboto', sans-serif;
@@ -251,6 +207,84 @@
 	padding: 0;
 }
 
+.submit-review-container{
+	grid-column: 1/-1;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+}
+.submit-review{
+	width: 35vw;
+	border: var(--black30) 1px solid;
+	padding: 1em 2em;
+	border-radius: 1em;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+.star-container input{
+	display: none;
+}
+.star-container{
+	display: flex;
+	width: 100%;
+	padding: 0 5em;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
+.star-container label{
+	color: var(--black30);
+	font-size: 2em;
+	padding: 0.1em;
+	transition: all .2s ease;
+}
+.star-container input:not(:checked) ~ label:hover,
+.star-container input:not(:checked) ~ label:hover ~ label{
+	color: rgb(250, 197, 63);
+	transform: scale(1.1);
+}
+.star-container input:checked ~ label{
+	color: #fec107;
+}
+.star-container input#rate-5:checked ~ label{
+	color: rgb(255, 184, 5);
+	text-shadow: 0 0 0.5em rgb(253, 255, 138);
+}
+.star-container input#rate-1:checked ~ label{
+	color: rgb(255, 118, 5);
+	text-shadow: 0 0 0.5em rgb(255, 195, 138);
+}
+.submit-review .head-message{
+	font-size: 1.5em;
+	line-height: 1.7;
+	font-family: 'Sofia Pro', sans-serif;
+	font-weight: 600;
+	color: orange;
+	transition: all .2s ease;
+}
+.submit-review textarea{
+	width: 100%;
+	padding: 0.5em 1em;
+	margin: 0 0 1em 0;
+	border: none;
+	outline: none;
+	font-size: 1.2em;
+	background-color: #00000010;
+	border-radius: 0.25em;
+}
+.submit-review input[type="submit"]{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+#rate-5:checked + .head-message::before{
+	content: 'Hellow';
+}
+
 @media screen and (max-width: 760px){
 	.grid-container>div{
 		grid-column: 1/-1;
@@ -260,6 +294,12 @@
 	}
 	.grid-review{
 		grid-template-columns: repeat(5, minmax(50vw, 1fr));
+	}
+	.submit-review{
+		width: 50vw;
+	}
+	.star-container{
+		padding: 0 1em;
 	}
 }
 .scale{animation: scale 0.5s ease forwards;}

@@ -144,19 +144,16 @@
 			display: block;
 			margin-top: 5px;
 		}
-			.search-filter .filter-common div input,
-			.search-filter .filter-common div select{
+			.search-filter .filter-common div input{
 				cursor: pointer;
 				margin-right: 5px;
 			}
-			.search-filter .price > input,
+			.search-filter > input,
 			.search-filter .district > select{
 				padding: 0.5em;
 				border-radius: 5px;
 				border: 0.2px solid var(--black30);
 				width: 100%;
-			}
-			.search-filter .district > select{
 				cursor: pointer;
 			}
 			.search-filter .rating div span{

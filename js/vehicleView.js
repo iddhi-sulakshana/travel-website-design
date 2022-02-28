@@ -17,30 +17,21 @@ const changeImage = () => {
 }
 changeImage();
 
-//This get the current date assign it to the checkin date
-//when chekin data changed check if checkin value is none
-//then disable checkout else check if checkout vale is less
-//than checkin value set checkout value to the checkin value
-//and after if set checkout min to checkin value to disable
-//users to select date behind the check out and undisable checkout
-const changeDate = () => {
-	//date format yyyy-mm-dd
-	const date = new Date();
-	const today = date.getFullYear() + "-" + (date.getMonth()+1)  + "-" + date.getDate()+1;
-	const checkin = document.getElementById('datein');
-	const checkout = document.getElementById('dateout');
-	checkin.valueAsDate = new Date();
-	checkin.min = checkout.min = checkin.value;
-	checkin.addEventListener('change', () => {
-		if(checkin.value == ""){
-			checkout.disabled = true;
-		}else{
-			if(checkout.value < checkin.value){
-				checkout.value = checkin.value; 
-			}
-			checkout.min = checkin.value; 
-			checkout.disabled = false;
+//change the post review header depend on review status
+const head = document.querySelector('.head-message');
+const stars = document.getElementsByName('rate');
+for(let i=0; i<stars.length; i++){
+	stars[i].addEventListener('click', (event) => {
+		if(event.path[0].id == 'rate-1'){
+			head.innerHTML = 'I hate this 😣';
+		}else if(event.path[0].id == 'rate-2'){
+			head.innerHTML = 'I just like it 😑';
+		}else if(event.path[0].id == 'rate-3'){
+			head.innerHTML = 'I like it 😐';
+		}else if(event.path[0].id == 'rate-4'){
+			head.innerHTML = 'I Like this 🙂';
+		}else if(event.path[0].id == 'rate-5'){
+			head.innerHTML = 'I Love this 😍';
 		}
 	});
 }
-changeDate();
