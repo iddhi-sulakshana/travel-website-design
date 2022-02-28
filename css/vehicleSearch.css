@@ -239,10 +239,6 @@
 		margin-top: auto;
 		color: var(--midblue);
 	}
-	.searched-content .searched-item a p{
-		text-align: justify;
-		color: var(--ash);
-	}
 	.searched-content .searched-item a h1, h2, div .details{
 		color: var(--darkblue);
 		display: inline;
