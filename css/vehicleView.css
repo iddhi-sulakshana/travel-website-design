@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
 .grid-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
