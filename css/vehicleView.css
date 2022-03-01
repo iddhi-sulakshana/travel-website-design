@@ -47,10 +47,10 @@
 .grid-details .price{
 	margin-top: 1vw;
 	margin-bottom: 5vw;
-	box-shadow: inset -2px -2px 2px rgba(0,0,0,0.4), inset 2px 2px 2px rgba(0,0,0,0.4)
-}
-.grid-details .price:hover{
-	transform: scale(1.03);
+	background-color: var(--extralightblue);
+	color: black;
+	font-weight: 700;
+	border: 1px black solid;
 }
 .grid-details *[class="button"], .price{
 	font-family: 'Mada', sans-serif;
