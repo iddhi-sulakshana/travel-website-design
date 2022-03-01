@@ -75,7 +75,7 @@
 		.wrapper2{
 			flex-grow: 1;
 		}
-			.wrapper2 .inputType{
+			.wrapper .inputType{
 				padding: 5px;
 				cursor: pointer;
 				width: 100%;
@@ -147,14 +147,6 @@
 			.search-filter .filter-common div input{
 				cursor: pointer;
 				margin-right: 5px;
-			}
-			.search-filter > input,
-			.search-filter .district > select{
-				padding: 0.5em;
-				border-radius: 5px;
-				border: 0.2px solid var(--black30);
-				width: 100%;
-				cursor: pointer;
 			}
 			.search-filter .rating div span{
 				color: var(--black30);

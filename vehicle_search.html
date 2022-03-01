@@ -35,20 +35,54 @@
 		<form name="advanced-search-form" method="GET" action="vehicle_search.html">
 			<div class="form-content">
 				<div class="wrapper wrapper0">
-					<label for="check-in">Check-in Date</label>
-					<input type="date" name="check-in" placeholder="Check in date" required=""  min="2022-02-14" id="datein">
-				</div>
-				<div class="wrapper wrapper1">
-					<label for="check-out">Check-out Date</label>
-					<input type="date" name="check-out" placeholder="Check in date" required="" min="2022-02-14" id="dateout">
-				</div>
-				<div class="wrapper wrapper2">
-					<label>Vehicle Type</label>
+					<label for="vehicleType">Vehicle Type</label>
 					<select name="vehicleType" class="inputType" required="">
 						<option value="">Vehicle Type</option>
 						<option value="Car">Car</option>
 						<option value="Van">Van</option>
 						<option value="Bus">Bus</option>
+					</select>
+				</div>
+				<div class="wrapper wrapper1">
+					<label for="district">District</label>
+					<select name="district" class="inputType" required="">
+						<option value="">Select District</option>
+						<option value="Ampara">Ampara</option>
+						<option value="Anuradhapura">Anuradhapura</option>
+						<option value="Badulla">Badulla</option>
+						<option value="Batticaloa">Batticaloa</option>
+						<option value="Colombo">Colombo</option>
+						<option value="Galle">Galle</option>
+						<option value="Gampaha">Gampaha</option>
+						<option value="Hambantota">Hambantota</option>
+						<option value="Jaffna">Jaffna</option>
+						<option value="Kalutara">Kalutara</option>
+						<option value="Kandy">Kandy</option>
+						<option value="Kegalle">Kegalle</option>
+						<option value="Kilinochchi">Kilinochchi</option>
+						<option value="Kurunegala">Kurunegala</option>
+						<option value="Mannar">Mannar</option>
+						<option value="Matale">Matale</option>
+						<option value="Matara">Matara</option>
+						<option value="Moneragala">Moneragala</option>
+						<option value="Mullaitivu">Mullaitivu</option>
+						<option value="Nuwara Eliya">Nuwara Eliya</option>
+						<option value="Polonnaruwa">Polonnaruwa</option>
+						<option value="Puttalam">Puttalam</option>
+						<option value="Ratnapura">Ratnapura</option>
+						<option value="Trincomalee">Trincomalee</option>
+						<option value="Vavuniya">Vavuniya</option>
+					</select>	
+				</div>
+				<div class="wrapper wrapper2">
+					<label for="seats">seats</label>
+					<select name="seats" class="inputType" required="">
+						<option value="">Select Seat Count</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="4">4</option>
+						<option value="5+">5+</option>
 					</select>
 				</div>
 				<div class="wrapper wrapper3">
@@ -63,22 +97,6 @@
 			<div class="filter-container">
 				<div class="search-filter">
 					<form name="search-filter-form" action="vehicle_search.html" method="GET">
-						<label for="vehicle-seats">Seats</label>
-						<div class="filter-common">
-							<div>
-								<input type="radio" name="vehicle-seats" value="2"> 2
-							</div>
-							<div>
-								<input type="radio" name="vehicle-seats" value="3"> 3
-							</div>
-							<div>
-								<input type="radio" name="vehicle-seats" value="4"> 4
-							</div>
-							<div>
-								<input type="radio" name="vehicle-seats" value="5+"> 5+
-							</div>
-						</div>
-						<hr> 
 						<label for="vehicle-rating">Rating</label>
 						<div class="filter-common rating">
 							<div>
@@ -96,38 +114,6 @@
 							<div>
 								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="1"><span class="fa fa-star"></span>
 							</div>
-						</div>
-						<hr>
-						<div class="filter-common district">
-							<label for="district">District</label>
-							<select name="destination" required="">
-								<option value="">Select Destination</option>
-								<option value="Ampara">Ampara</option>
-								<option value="Anuradhapura">Anuradhapura</option>
-								<option value="Badulla">Badulla</option>
-								<option value="Batticaloa">Batticaloa</option>
-								<option value="Colombo">Colombo</option>
-								<option value="Galle">Galle</option>
-								<option value="Gampaha">Gampaha</option>
-								<option value="Hambantota">Hambantota</option>
-								<option value="Jaffna">Jaffna</option>
-								<option value="Kalutara">Kalutara</option>
-								<option value="Kandy">Kandy</option>
-								<option value="Kegalle">Kegalle</option>
-								<option value="Kilinochchi">Kilinochchi</option>
-								<option value="Kurunegala">Kurunegala</option>
-								<option value="Mannar">Mannar</option>
-								<option value="Matale">Matale</option>
-								<option value="Matara">Matara</option>
-								<option value="Moneragala">Moneragala</option>
-								<option value="Mullaitivu">Mullaitivu</option>
-								<option value="Nuwara Eliya">Nuwara Eliya</option>
-								<option value="Polonnaruwa">Polonnaruwa</option>
-								<option value="Puttalam">Puttalam</option>
-								<option value="Ratnapura">Ratnapura</option>
-								<option value="Trincomalee">Trincomalee</option>
-								<option value="Vavuniya">Vavuniya</option>
-							</select>
 						</div>
 						<hr>
 						<button class="btn-animation" type="submit" name="search-filter-submit" value="submit">Search</button>

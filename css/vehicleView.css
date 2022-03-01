@@ -206,12 +206,18 @@
 	margin-top: 0.3em;
 	padding: 0;
 }
-
 .submit-review-container{
 	grid-column: 1/-1;
 	padding: 1em;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+.submit-review-container .alert-login{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .submit-review{
 	width: 35vw;
