@@ -62,13 +62,12 @@ CREATE TABLE table_restaurant (
   restaurantImage2 VARCHAR(40),
   restaurantImage3 VARCHAR(40),
   restaurantDescription TEXT NOT NULL,
-  restaurantFacilities VARCHAR(40) NOT NULL,
   restaurantMenu VARCHAR(40) NOT NULL,
   restaurantWebsite TEXT NOT NULL,
   restaurantAddress VARCHAR(40) NOT NULL,
   restaurantMap TEXT NOT NULL,
   restaurantPhoneNo VARCHAR(12) NOT NULL,
-  restaurantPrice DECIMAL(10,2) NOT NULL,
+  restaurantPrice VARCHAR(20) NOT NULL,
   restaurantRating DECIMAL(2,1) DEFAULT 0.0,
   PRIMARY KEY (restaurantId)
 );
@@ -165,6 +164,12 @@ VALUES
 ('Centara Ceysands Resort & Spa Sri Lanka','Kalutara','hotel4 (1).jpg','hotel4 (2).jpg,hotel4 (3).jpg,hotel4 (4).jpg,hotel4 (5).jpg,hotel4 (6).jpg,hotel4 (7).jpg,hotel4 (8).jpg,hotel4 (9).jpg,hotel4 (10).jpg','On the Bentota peninsula, the Centara Ceysands Resort & Spa Sri Lanka enjoys a superb location with the Bentota River on one side and the Indian Ocean on the other, and is accessed by a short boat ride across the lagoon. The rooms and suites (38-139 sqm. of total living space) feature a balcony or terrace looking out across the peaceful river or over the blue ocean. Truly a family destination in concept, the resort also offers a choice of family-friend accommodation options including Family Residences with bunk beds in a separate children’s area. The resort offers an abundance of natural attractions along with a huge, palm-fringed swimming pool with Jacuzzi, a wealth of water sports including canoeing, sailing, wakeboarding, knee-boarding, and jet skiing, two kids clubs, and a wonderful spa inspired by Thai and Ayurvedic wellbeing heritage. Riverside dining is one of the highlights of the resort which is also home to an authentic Thai restaurant and two bars. Wi-Fi is complimentary.','wifi,parking,swimmer,dumbbell,sun','eye,bed-family,bed-delux,bed-bridal','snowflake,wine-bottle,bed,bell','https://www.centarahotelsresorts.com/centara/ccs/','034 227 5073','Aluthgama - Mathugama Rd, Aluthgama Sri Lanka','https://g.page/CentaraCeysands?share','32000.00'),
 ('Cinnamon Citadel','Kandy','hotel5 (1).jpg','hotel5 (2).jpg,hotel5 (3).jpg,hotel5 (4).jpg,hotel5 (5).jpg,hotel5 (6).jpg,hotel5 (7).jpg,hotel5 (8).jpg,hotel5 (9).jpg,hotel5 (10).jpg','Sweeping green hills, the longest river in the country, misty mornings and the fresh outdoors, are just a few things that naturally come together here to make the perfect holiday. Just 2 1/2 hours from the Sri Lanka''s Capital City Colombo, Chaaya Citadel Kandy has reinvented itself taking into account the needs of holidaymakers around the world. Replete with a sense of history, serenity and majesty, the hotel offers guests the opportunity to experience the amazing Kandyan history, the culture and the arts that play a big role in the lives of the Sri Lankans.','wifi,parking,swimmer,dumbbell,sun','eye,bed-family,bed-delux,bed-bridal','snowflake,wine-bottle,bed,bell','https://www.cinnamonhotels.com/cinnamoncitadelkandy','011 216 1161','124 Srimath Kuda Ratwatte Mawatha, Kandy 20000 Sri Lanka','https://goo.gl/maps/AUECpnCDEW5MDrb86','20000.00'),
 ('Citrus Waskaduwa','Kalutara','hotel6 (1).jpg','hotel6 (2).jpg,hotel6 (3).jpg,hotel6 (4).jpg,hotel6 (5).jpg,hotel6 (6).jpg,hotel6 (7).jpg,hotel6 (8).jpg,hotel6 (9).jpg,hotel6 (10).jpg','Citrus Waskaduwa is a five star 150 roomed resort managed by Sri Lanka''s fastest growing leisure company, Citrus Leisure PLC.','wifi,parking,swimmer,dumbbell,sun','eye,bed-family,bed-delux,bed-bridal','snowflake,wine-bottle,bed,bell','http://www.citrusleisure.com/waskaduwa/','011 575 5055','No. 427 Samanthara Road, Waskaduwa 12000 Sri Lanka','https://goo.gl/maps/ockyjZYLNnnRL6827','17000.00');
+
+-- @BLOCK
+-- insert into the restaurant
+INSERT INTO `table_restaurant`(`restaurantName`, `restaurantDistrict`, `restaurantImagePri`, `restaurantImage1`, `restaurantImage2`, `restaurantImage3`, `restaurantDescription`, `restaurantMenu`, `restaurantWebsite`, `restaurantAddress`, `restaurantMap`, `restaurantPhoneNo`, `restaurantPrice`)
+VALUES 
+('The Gallery Café','Colombo','restaurant1.jpg','restaurant1_1.jpg','restaurant1_2.jpg','restaurant1_3.jpg',"Paradise Road Galleries -the Gallery Cafe Opened In 1998 In A Structure Which Was The Former Offices Of World Renowned Sri Lankan Architect, The Late Geoffrey Bawa. Bawa Personally Approved Fernando Taking Over His Beloved Property And Converting It Into A Restaurant And Art Gallery And Respected Shanth's Design Sense In The Conversion And Renovation Of The Building To Complement His Own. Bawa's Only Input Was The Location Of The Main Pavilion Where Most Diners Are Seated. The Art Gallery Features Regularly Changing Exhibitions By Established And Emerging Local Artists, For Sale. As The Cafe Is Open From 10AM Through To Midnight Daily, Visitors Frequent The Property For Meals, Site Seeing, Coffee, Cake, Shopping And The Complimentary Wi-fi Available For Use Of Patrons. The Gallery Cafe's Menu Has Not Changed In Years As Regulars Have Their Favourites And Fernando Prides Himself On The Fact That They May Always Return For That Option. It Is Particularly Known For Its Cocktails And Desserts As Well As It's Consistently 'good Food.'",'European, British, Sri Lankan 🍲','https://bit.ly/3C5hZwv','2 Alfred House Rd, Colombo 00300','https://goo.gl/maps/1twxRjXHZDjJFd459','0112 582 162','LKR 2,427 - LKR 10,518');
 
 -- @BLOCK
 -- insert into the vehicle
