@@ -23,15 +23,15 @@ const stars = document.getElementsByName('rate');
 for(let i=0; i<stars.length; i++){
 	stars[i].addEventListener('click', (event) => {
 		if(event.path[0].id == 'rate-1'){
-			head.innerHTML = 'I hate this 😣';
+			head.innerHTML = 'Terrible 😣';
 		}else if(event.path[0].id == 'rate-2'){
-			head.innerHTML = 'I just like it 😑';
+			head.innerHTML = 'Poor 😑';
 		}else if(event.path[0].id == 'rate-3'){
-			head.innerHTML = 'I like it 😐';
+			head.innerHTML = 'Average 😐';
 		}else if(event.path[0].id == 'rate-4'){
-			head.innerHTML = 'I Like this 🙂';
+			head.innerHTML = 'Good 🙂';
 		}else if(event.path[0].id == 'rate-5'){
-			head.innerHTML = 'I Love this 😍';
+			head.innerHTML = 'Excellent 😍';
 		}
 	});
 }

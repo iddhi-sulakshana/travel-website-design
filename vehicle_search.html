@@ -92,43 +92,12 @@
 			</div>
 		</form>
 	</section>
+	
+	<hr>
+
 	<section class="grid-container">
-			<button class="btn-animation" id="filter-toggle">Filters</button>
-			<div class="filter-container">
-				<div class="search-filter">
-					<form name="search-filter-form" action="vehicle_search.html" method="GET">
-						<label for="vehicle-rating">Rating</label>
-						<div class="filter-common rating">
-							<div>
-								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="5"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-							</div>
-							<div>
-								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="4"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-							</div>
-							<div>
-								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="3"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-							</div>
-							<div>
-								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="2"><span class="fa fa-star"></span><span class="fa fa-star"></span>
-							</div>
-							<div>
-								<input type="checkbox" onchange="changeCheck(this)" class="" name="vehicle-rating" value="1"><span class="fa fa-star"></span>
-							</div>
-						</div>
-						<hr>
-						<button class="btn-animation" type="submit" name="search-filter-submit" value="submit">Search</button>
-					</form>
-				</div>
-			</div>
 			<div class="main-content">
-				<div class="view-by">
-					<button class="btn-animation active" id="grid-view" onclick="changeListGrid(this)"><i class="fa fa-th"></i> Grid View</button>
-					<button class="btn-animation" id="list-view" onclick="changeListGrid(this)"><i class="fa fa-list-ul"></i> List View</button>
-				</div>
-
-				<hr>
-
-				<div class="searched-content grid-view" id="listingContent">
+				<div class="searched-content" id="listingContent">
 					<div class="searched-item">
 						<a href="vehicle_view.html">
 						<img src="img/Vehicle/car1.jpg" alt="product image">
@@ -189,7 +158,6 @@
 						</div>
 						</a>
 					</div>
-
 					<div class="searched-item">
 						<a href="vehicle_view.html">
 						<img src="img/Vehicle/bus1.jpg" class="product-image" alt="product image">
@@ -202,13 +170,30 @@
 						</div>
 						</a>
 					</div>
-				</div>
-				<div class="page-nav" id="page-navigation">
-					<button class="btn-animation pge-btn active">1</button>
-					<button class="btn-animation pge-btn">2</button>
-					<button class="btn-animation pge-btn">3</button>
-					<button class="btn-animation pge-btn">4</button>
-					<button class="btn-animation pge-btn">5</button>
+					<div class="searched-item">
+						<a href="vehicle_view.html">
+						<img src="img/Vehicle/car3.jpg" class="product-image" alt="product image">
+						<h3 class="product-title">Rent a car</h3>
+						<h1 class="product-price">$ 1500.<h2>00</h2></h1>
+						<div>
+							<p class="details">&#128186;5</p>
+							<p class="details"><i class="fa fa-map-marker" aria-hidden="true"></i> Anuradhapura</p>
+							<p class="details"><i class="fa fa-star checked"></i> 4.5</p>
+						</div>
+						</a>
+					</div>
+					<div class="searched-item">
+						<a href="vehicle_view.html">
+						<img src="img/Vehicle/car4.jpg" class="product-image" alt="product image">
+						<h3 class="product-title">Rent a car</h3>
+						<h1 class="product-price">$ 1500.<h2>00</h2></h1>
+						<div>
+							<p class="details">&#128186;5</p>
+							<p class="details"><i class="fa fa-map-marker" aria-hidden="true"></i> Anuradhapura</p>
+							<p class="details"><i class="fa fa-star checked"></i> 4.5</p>
+						</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</section>

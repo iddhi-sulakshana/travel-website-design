@@ -112,55 +112,6 @@
 			.wrapper3 .text{
 				display: none;
 			}
-			
-
-.grid-container{
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	grid-gap: 1em;
-}
-/*-------------------------*\
-	Search Filter Section
-\*-------------------------*/
-#filter-toggle{
-	grid-column: 1/-1;
-	padding: 10px;
-	display: none;
-}
-.search-filter{
-	padding: 10px;
-	border: 1px solid var(--lightblack);
-	grid-column: 1/2;
-}
-	.search-filter label{
-		color: var(--midblack);
-		display: block;
-		margin: 2px 0px;
-	}
-	.search-filter .filter-common{
-		margin-left: 15px;
-	}
-		.search-filter .filter-common div{
-			display: block;
-			margin-top: 5px;
-		}
-			.search-filter .filter-common div input{
-				cursor: pointer;
-				margin-right: 5px;
-			}
-			.search-filter .rating div span{
-				color: var(--black30);
-			}
-			.search-filter .rating div .checked ~ span{
-				color: orange;
-			}
-			.search-filter .rating div:hover > span{
-				color: orange;
-		 	}
-.search-filter button{
-	width: 100%;
-	height: 25px;
-}
 /*-------------------------*\
   Main Content Sction
 \*-------------------------*/
@@ -190,23 +141,18 @@
 	grid-gap: 1em;
 	margin-bottom: 10px;
 }
-.searched-content.grid-view{
+.searched-content{
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.searched-content.list-view{
-	grid-template-rows: repeat(1, 1fr);
 }
 .searched-content .searched-item{
 	width: auto;
 	padding: 10px 5px;
 	border: 1px solid var(--black30);
 	border-radius: 5px;
+	opacity: 0;
 }
-.searched-content.grid-view .searched-item{
+.searched-content .searched-item{
 	text-align: center;
-}
-.searched-content.list-view .searched-item{
-	text-align: left;
 }
 	.searched-content .searched-item a{
 		text-decoration: none;
@@ -218,13 +164,8 @@
 		height: auto;
 		padding: 20px;
 	}
-	.searched-content.grid-view .searched-item a img{
+	.searched-content .searched-item a img{
 		width: 100%;
-	}
-	.searched-content.list-view .searched-item a img{
-		float: left;
-		height:100%;
-		width: 30%;
 	}
 	.searched-content .searched-item a h3{
 		font-family: 'Mada', sans-serif;
@@ -305,4 +246,3 @@
 /* animations */
 body .advanced-search{animation-delay: 0.25s;}
 body .grid-container{animation-delay: 0.35s;}
-.searched-item{opacity: 0;}
