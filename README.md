@@ -37,8 +37,8 @@
   - [ ] Restaurants View Page
   - [x] Attraction Page
   - [x] Attraction View Page
-  - [ ] Packages Page
-  - [ ] Sign in & Sign up Page
+  - [x] Packages Page
+  - [x] Sign in & Sign up Page
   - [ ] About Page
   - [x] Notices Page
 
