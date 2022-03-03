@@ -1,3 +1,25 @@
+/*-------------------------*\
+  Top image Section
+\*-------------------------*/
+.top-image{
+	width: 100%;
+	background-color: var(--darkblue);
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 10px;
+	-webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: var(--midblue);
+	text-align: center;
+	color: white;
+	background: url('../img/Vehicle/header.jpg') content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 /*-------------------------*\
   Advanced Search Section
@@ -120,21 +142,6 @@
 	display: flex;
 	flex-direction: column;
 }
-/* top view by buttons */
-.view-by{
-	margin: 5px 0px;
-}
-.view-by button{
-	padding: 0.4em;
-	cursor: pointer;
-}
-.view-by .active{
-	border: 0;
-	color: white;
-	cursor: default;
-	background-color: var(--lightblue);
-	box-shadow: inset -1px -1px 3px rgba(0,0,0,0.5), 2px 2px 3px rgba(0,0,0,0.2);
-}
 /*searched content grid view*/
 .searched-content{
 	display: grid;
@@ -189,23 +196,6 @@
 		color: orange;
 	}
 
-/*Bottom page navigation*/
-.page-nav{
-	text-align: center;
-	margin: 1em 0;
-}
-	.page-nav button{
-		height: 40px;
-		width: 40px;
-	}
-	.page-nav .active{
-		color: white;
-		cursor: default;
-		background-color: var(--lightblue);
-		box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2), 2px 2px 3px rgba(0,0,0,0.2);
-	}
-
-
 
 /*-------------------------*\
   Device Max width is 760 or lower
@@ -232,14 +222,6 @@
 	}
 	.main-content{
 		grid-column: 1/-1;
-	}
-	#filter-toggle{
-		display: inline-block;
-	}
-	.filter-container{
-		display: none;
-		grid-column: 1/-1;
-		margin-bottom: 5px;
 	}
 }
 
