@@ -29,10 +29,10 @@
 ## Task List
 - **_Design_**
   - [x] Home Page
-  - [ ] Hotel Search Page
+  - [x] Hotel Search Page
   - [x] Vehicle Search Page
   - [ ] Restaurant Search Page
-  - [ ] Hotel View Page
+  - [x] Hotel View Page
   - [x] Vehicle View Page
   - [ ] Restaurants View Page
   - [x] Attraction Page

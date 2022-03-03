@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search For Hotels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/hotelSearch.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/main/favicon.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/main/logo.png" class="main-logo"></a>
+        <nav>
+            <ul class="nav_link">
+                <li><a href="home.html">Home</a></li>
+                <li><a>Hotels</a></li>
+                <li><a href="vehicle_search.html">Vehicles</a></li>
+                <li><a href="hotel_search.html">Restaurants</a></li>
+                <li><a href="packages.html">packages</a></li>
+                <li><a href="notices.html">notices</a></li>
+                <li><a href="attraction.html">Attraction</a></li>
+                <li><a href="login.html" class="login"><button class="btn-animation">Login</button></a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <hr>
+    <div class="hero">
+        <div class="container">
+            <div class="main-heading">
+                <h1 style="font-size: 7vw; padding-left: 50px;">Discover</h1>
+                <h2 style="font-size: 6vw; padding-left: 50px;">Best Hotels for Best Price</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Hotel search bar-->
+
+    <section class="hotel-search">
+        <h3>Look For Hotels</h3>
+        <form name="hotel-search-form" method="GET" action="hotel_search.html">
+            <div class="form-content">
+                <div class="wrapper wrapper1">
+                    <label>Check-in Date</label>
+                    <input type="date" name="check-in date" placeholder="Check-in date" required="">
+                </div>
+                <div class="wrapper wrapper2">
+                    <label>Check-out Date</label>
+                    <input type="date" name="check-out date" placeholder="Check-out date" required="">
+                </div>
+                <div class="wrapper wrapper3">
+                    <label>Location</label>
+                    <input type="text" name="location" placeholder="Location" required="">
+                </div>
+                <div class="wrapper wrapper4">
+                    <button type="submit" value="submit" class="btn-animation icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button type="submit" value="s ubmit" class="btn-animation text">Search</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="grid-container">
+        <div class="content">
+            <div class="searched-content grid-view">
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel1 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel2 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel3 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel4 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel5 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="searched-item">
+                    <a href="hotel_view.html">
+                    <h2><b>Weligama Bay Marriott Resort & Spa</b></h2>
+                    <p>Matara, Sri Lanka</p>
+                    <img src="img/Hotel/hotel6 (1).jpg" height="300px" width="350px">
+                    <h1 class="hotel-price">LKR 25,000</h1>
+                    <button class="btn-animation" type="submit" name="booknow-submit" value="submit"><a href="hotel_search.html"></a>View Deal</button>
+                    <div>
+                        <p class="detail">
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star checked" style="color: orange;"></i>
+                            <i class="fa fa-star-half-full" style="color: orange;"></i>
+                        </p>
+                        <div>
+                            <p class="detail"><i class="fa fa-wifi" aria-hidden="true" style="color: blue;"></i> Free Wifi</p>
+                            <p class="detail"><i class="fas fa-parking" aria-hidden="true" style="color: blue;"></i> Free Parking</p>
+                            <p class="detail"><i class="fas fa-swimmer" aria-hidden="true" style="color: blue;"></i> Swimming Pool</p>
+                            <p class="detail"><i class="fas fa-coffee" aria-hidden="true" style="color: blue;"></i> Free Breakfast</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h3 class="footer-headings">Links</h3>
+            <a href="index.html">Home</a>
+			<a>Hotels</a>
+			<a href="vehicle_search.html">Vehicles</a>
+			<a href="restaurant_search.html">Restaurants</a>
+			<a href="packages.html">Packages</a>
+			<a href="notice.html">Notices</a>
+			<a href="attraction.html">Attraction</a>
+			<a href="guides.html">Guides</a>
+			<a href="home.html"><strong>Sign-in / Sign-up</strong></a>
+        </div>
+        <div class="footer-middle">
+            <h3 class="footer-headings">Contact Us</h3>
+            <form action="#" method="post" enctype="text/plain">
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter Your Name" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter Your Email" required="">
+                    <label for="msg">Message</label>
+                    <textarea for="msg" id="" cols="30" rows="5" placeholder="Send Your Problems To Us" required=""></textarea>
+                    <input type="submit" value="submit" class="btn-animation">
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer-right">
+            <h3 class="footer-headings">About Us</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright &copy 2022 PLAN'n GO All rights reserved</p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/hotelSearch.js"></script>
+</body>
+
+</html
