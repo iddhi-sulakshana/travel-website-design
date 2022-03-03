@@ -36,7 +36,6 @@
     padding-left: auto;
 }
 
-
 /*-------------------------*\
 Hotel Search Bar
 \*-------------------------*/
@@ -85,18 +84,40 @@ Hotel Search Bar
 }
 
 .wrapper1 {
-    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.wrapper .inputType {
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: 0px;
+    font-weight: 800;
+    height: auto;
+    font-size: 16px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+}
+
+.inputType option {
+    font-weight: 600;
+}
+
+.inputType option:checked {
+    background-color: var(--darkblue);
+    color: white;
 }
 
 .wrapper2 {
-    flex-grow: 1;
+    flex-grow: 2;
+}
+
+.wrapper2 .text {
+    font-weight: 800;
+    font-size: 16px;
 }
 
 .wrapper3 {
-    flex-grow: 1;
-}
-
-.wrapper4 {
     padding: 0px;
     text-align: center;
     width: 75px;
@@ -105,8 +126,8 @@ Hotel Search Bar
     border: 0px;
 }
 
-.wrapper4 .icon,
-wrapper4 .text {
+.wrapper3 .icon,
+.wrapper3 .text {
     width: 100%;
     height: 100%;
     background-color: var(--midblue);
@@ -115,7 +136,7 @@ wrapper4 .text {
     font-size: 32px;
 }
 
-.wrapper4 .text {
+.wrapper3 .text {
     display: none;
 }
 
@@ -124,7 +145,6 @@ wrapper4 .text {
     grid-template-columns: 1fr 4fr;
     grid-gap: 1em;
 }
-
 
 /*-------------------------*\
 Content Section

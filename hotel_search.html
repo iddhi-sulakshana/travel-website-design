@@ -43,23 +43,31 @@
     <br>
     <!-- Hotel search bar-->
 
+    
     <section class="hotel-search">
         <h3>Look For Hotels</h3>
-        <form name="hotel-search-form" method="GET" action="hotel_search.html">
+        <form name="hotel-search-form" method="GET" action="hotel-search.html">
             <div class="form-content">
                 <div class="wrapper wrapper1">
-                    <label>Check-in Date</label>
-                    <input type="date" name="check-in date" placeholder="Check-in date" required="">
+                    <label for="rooms">Rooms</label>
+                    <select name="rooms" class="inputType" required="">
+                        <option value="">Select No. of Rooms</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
                 </div>
                 <div class="wrapper wrapper2">
-                    <label>Check-out Date</label>
-                    <input type="date" name="check-out date" placeholder="Check-out date" required="">
+                    <label>Location</label>
+                    <input type="text" name="location" placeholder="Enter Location" required="">
                 </div>
                 <div class="wrapper wrapper3">
-                    <label>Location</label>
-                    <input type="text" name="location" placeholder="Location" required="">
-                </div>
-                <div class="wrapper wrapper4">
                     <button type="submit" value="submit" class="btn-animation icon"><i class="fa fa-search" aria-hidden="true"></i></button>
                     <button type="submit" value="s ubmit" class="btn-animation text">Search</button>
                 </div>
