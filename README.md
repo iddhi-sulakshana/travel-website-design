@@ -47,10 +47,9 @@ This project was developed by:
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
 
-<!--
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. -->
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
