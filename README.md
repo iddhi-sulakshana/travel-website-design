@@ -31,6 +31,31 @@ To run this project locally:
     ```
 3. Open `index.html` in your web browser.
 
+## Contributors
+
+This project was developed by:
+
+-   **Iddhi**
+-   **Chamodh**
+-   **Chanaka**
+-   **Harshana**
+-   **Yasas**
+-   **Kalana**
+-   **Saluka**
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
+
+<!--
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. -->
+
+## Contact
+
+For any inquiries or feedback, please raise an issue on github repository
+
 ## Screenshots
 
 ### Home Page
