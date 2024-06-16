@@ -1,43 +1,90 @@
-# Travel-Website for the project
+# Plan'n Go Website Design
 
-## Team Members :
-  - Chamodh (**_Leader_**)
-  - Iddhi
-  - Chanaka
-  - Harshana
-  - Yasas
-  - Kalana
-  - Saluka
+**Plan'n Go** is a comprehensive trip planning web application for exploring Sri Lanka. It provides features to search and book hotels, rent vehicles, find restaurants, discover best deals/packages, view notices, and learn about various attractions in Sri Lanka.
 
-## Work Breakdown :
+## Features
 
-  - Home Page                 : Chanaka
-  - Hotel Search Page         : Yasas
-  - Vehicle Search Page       : Iddhi
-  - Restaurants Search Page   : Harshana
-  - Hotel View Page           : Yasas
-  - Vehicle View Page         : Iddhi
-  - Restaurants View Page     : Harshana
-  - Attraction Page           : Kalana
-  - Attraction View Page      : Kalana
-  - Packages Page             : Chamodh
-  - Sign in & Sign up Page    : Chamodh
-  - About Page                : Saluka
-  - Notices Page              : Saluka
-  - Guide Page                : Chanaka
+-   **Hotel Search**: Browse and compare hotels based on price, location, and amenities.
+-   **Vehicle Rental**: Find and book vehicles for rent.
+-   **Restaurant Search**: Discover restaurants and their offerings.
+-   **Best Deals & Packages**: Access curated deals and packages for travelers.
+-   **Notices**: Stay informed with the latest travel notices.
+-   **Attractions**: Learn about tourist attractions and places to visit in Sri Lanka.
 
-## Task List
-- **_Design_**
-  - [x] Home Page
-  - [x] Hotel Search Page
-  - [x] Vehicle Search Page
-  - [x] Restaurant Search Page
-  - [x] Hotel View Page
-  - [x] Vehicle View Page
-  - [x] Restaurants View Page
-  - [x] Attraction Page
-  - [x] Attraction View Page
-  - [x] Packages Page
-  - [x] Sign in & Sign up Page
-  - [x] About Page
-  - [x] Notices Page
+## Technologies Used
+
+-   **HTML5**: Structure and content.
+-   **CSS3**: Styling and layout.
+-   **JavaScript**: Interactivity and dynamic content.
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/plan-n-go.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd plan-n-go
+    ```
+3. Open `index.html` in your web browser.
+
+## Screenshots
+
+### Home Page
+
+![Home Page](/screenshots/home.png)
+
+### Login Page
+
+![Login Page](/screenshots/login.png)
+
+### Signup Page
+
+![Signup Page](/screenshots/signup.png)
+
+### Profile Page
+
+![Profile Page](/screenshots/profile.png)
+
+### Hotel Search
+
+![Hotel Search](/screenshots/hotel_search.png)
+
+### Hotel View
+
+![Hotel View](/screenshots/hotel_view.png)
+
+### Vehicle Search
+
+![Vehicle Search](/screenshots/vehicle_search.png)
+
+### Vehicle View
+
+![Vehicle Search](/screenshots/vehicle_view.png)
+
+### Restaurant Search
+
+![Restaurant Search](/screenshots/restaurant_search.png)
+
+### Restaurant View
+
+![Restaurant Search](/screenshots/restaurant_view.png)
+
+### Packages
+
+![Best Deals](/screenshots/packages.png)
+
+### Notices
+
+![Notices](/screenshots/notices.png)
+
+### Attractions
+
+![Attractions](/screenshots/attraction.png)
+
+### Attraction View
+
+![Attractions](/screenshots/attraction_view.png)
