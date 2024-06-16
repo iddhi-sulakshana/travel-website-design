@@ -35,9 +35,9 @@ To run this project locally:
 
 This project was developed by:
 
--   **Iddhi**
--   **Chamodh**
--   **Chanaka**
+-   [Iddhi](https://github.com/iddhi-sulakshana)
+-   [Chamodh](https://github.com/chamodhpereira)
+-   [Chanaka](https://github.com/gncranasingha)
 -   **Harshana**
 -   **Yasas**
 -   **Kalana**
